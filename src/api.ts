@@ -68,7 +68,7 @@ export const getPosterUrl = (path: string, size: 'w500' | 'original' = 'w500') =
   return path ? `${TMDB_IMAGE_URL}/${size}${path}` : null;
 };
 
-export const getMovieDetails = async (tmdbId: string) => {
+const getMovieDetails = async (tmdbId: string) => {
   const response = await tmdbAxios.get(`/movie/${tmdbId}`);
   return response.data;
 };
