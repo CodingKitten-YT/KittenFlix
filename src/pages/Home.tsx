@@ -56,7 +56,7 @@ export const Home = () => {
             Legal
           </a>{' '}
           ·
-          <a href="https://github.com/your-repo" className="hover:underline">
+          <a href="https://github.com/CodingKitten-YT/KittenFlix" className="hover:underline">
             GitHub
           </a>
         </div>
