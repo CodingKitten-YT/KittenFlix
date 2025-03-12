@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { TMDBMovie, TMDBTVShow } from '../types';
 import { MovieCard } from '../components/MovieCard';
 import { SearchBar } from '../components/SearchBar';

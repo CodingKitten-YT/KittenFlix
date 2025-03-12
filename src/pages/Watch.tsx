@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useCallback } from 'react';
+import { useEffect, useState, useCallback } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { VideoPlayer } from '../components/VideoPlayer';
 import { getMovieEmbedUrl, getTVShowEmbedUrl, getMovieDetails } from '../api';
@@ -58,7 +58,7 @@ export const Watch = () => {
             className="inline-flex items-center gap-2 text-white/80 hover:text-white transition-colors"
           >
             <ArrowLeft className="w-5 h-5" />
-            <span>Back</span>
+            <span>Go Back</span>
           </Link>
           {movieDetails && (
             <div className="text-white/80">

@@ -1,4 +1,3 @@
-import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { Home, Compass, Film } from 'lucide-react';
 import { cn } from '../utils';

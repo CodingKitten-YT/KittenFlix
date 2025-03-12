@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { getPopularMovies, getPopularTVShows } from '../api';
 import { TMDBMovie, TMDBTVShow } from '../types';
 import { MovieCard } from '../components/MovieCard';

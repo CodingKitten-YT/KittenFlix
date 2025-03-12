@@ -73,7 +73,7 @@ export const getMovieDetails = async (tmdbId: string) => {
   return response.data;
 };
 
-export const getTVShowDetails = async (tmdbId: string) => {
+const getTVShowDetails = async (tmdbId: string) => {
   const response = await tmdbAxios.get(`/tv/${tmdbId}`);
   return response.data;
 };

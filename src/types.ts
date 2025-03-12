@@ -1,4 +1,4 @@
-export interface Movie {
+interface Movie {
   imdb_id: string;
   tmdb_id: string;
   title: string;
@@ -12,7 +12,7 @@ export interface MovieResponse {
   pages: number;
 }
 
-export interface TVShow {
+interface TVShow {
   imdb_id: string;
   tmdb_id: string;
   title: string;
@@ -55,4 +55,4 @@ export interface TMDBResponse {
   total_results: number;
 }
 
-export type MediaType = 'movie' | 'tv';
+type MediaType = 'movie' | 'tv';
