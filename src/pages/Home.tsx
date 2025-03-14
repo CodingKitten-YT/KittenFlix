@@ -58,6 +58,10 @@ export const Home = () => {
           ·
           <a href="https://github.com/CodingKitten-YT/KittenFlix" className="hover:underline">
             GitHub
+          </a>{' '}
+          ·
+          <a href="https://kittengames.vercel.app" className="hover:underline">
+            KittenGames
           </a>
         </div>
       </footer>
