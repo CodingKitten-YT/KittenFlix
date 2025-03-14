@@ -1,3 +1,1 @@
-# KittenFlix
-
-Yet another VidSrc wrapper
+KittenFlix: A streaming app that uses the VidSrc API to stream movies and episodes.
