@@ -52,7 +52,7 @@ export const Home = () => {
 
       <footer className="w-full text-center py-4 text-gray-400">
         <div className="flex justify-center gap-4">
-          <a href="/legal" className="hover:underline">
+          <a href="/movies/legal" className="hover:underline">
             Legal
           </a>{' '}
           ·
