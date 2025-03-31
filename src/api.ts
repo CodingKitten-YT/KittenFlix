@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { MovieResponse, TVShowResponse, TMDBResponse } from './types';
 
-const BASE_URL = 'https://vidsrc.xyz';
+const BASE_URL = 'https://embed.su';
 const TMDB_URL = 'https://api.themoviedb.org/3';
 const TMDB_TOKEN = 'eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxODk5NDlkNDEzMWM3MTdiNGNlNWY1YjViYjlmZmJlZCIsIm5iZiI6MTcwMTAwMTM0NC40NTYsInN1YiI6IjY1NjMzODgwNzA2ZTU2MDBjNGJiOTA3OCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.oE7CqxBBS8w9vooBkzD9nNfIcheHzVlgVe-x1Qzh1Ls';
 const TMDB_IMAGE_URL = 'https://image.tmdb.org/t/p';
