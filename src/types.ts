@@ -7,7 +7,7 @@ interface Movie {
   quality: string;
 }
 
-export interface MovieResponse {
+interface MovieResponse {
   result: Movie[];
   pages: number;
 }
@@ -21,7 +21,7 @@ interface TVShow {
   quality: string;
 }
 
-export interface TVShowResponse {
+interface TVShowResponse {
   result: TVShow[];
   pages: number;
 }

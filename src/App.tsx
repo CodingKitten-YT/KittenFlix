@@ -7,7 +7,7 @@ import { Navigation } from './components/Navigation';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/movies">
       <MainContent />
     </BrowserRouter>
   );

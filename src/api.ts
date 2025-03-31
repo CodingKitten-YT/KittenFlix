@@ -1,7 +1,6 @@
 import axios from 'axios';
-import { MovieResponse, TVShowResponse, TMDBResponse } from './types';
+import { TMDBResponse } from './types';
 
-const BASE_URL = 'https://embed.su';
 const TMDB_URL = 'https://api.themoviedb.org/3';
 const TMDB_TOKEN = 'eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxODk5NDlkNDEzMWM3MTdiNGNlNWY1YjViYjlmZmJlZCIsIm5iZiI6MTcwMTAwMTM0NC40NTYsInN1YiI6IjY1NjMzODgwNzA2ZTU2MDBjNGJiOTA3OCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.oE7CqxBBS8w9vooBkzD9nNfIcheHzVlgVe-x1Qzh1Ls';
 const TMDB_IMAGE_URL = 'https://image.tmdb.org/t/p';
@@ -34,14 +33,6 @@ export const getPopularTVShows = async (page: number = 1): Promise<TMDBResponse>
   return response.data;
 };
 
-export const getMovieEmbedUrl = (imdbId: string) => {
-  return `${BASE_URL}/embed/movie/${imdbId}`;
-};
-
-export const getTVShowEmbedUrl = (imdbId: string) => {
-  return `${BASE_URL}/embed/tv/${imdbId}`;
-};
-
 export const searchMovies = async (query: string): Promise<TMDBResponse> => {
   const response = await tmdbAxios.get('/search/movie', {
     params: {
@@ -68,12 +59,3 @@ export const getPosterUrl = (path: string, size: 'w500' | 'original' = 'w500') =
   return path ? `${TMDB_IMAGE_URL}/${size}${path}` : null;
 };
 
-const getMovieDetails = async (tmdbId: string) => {
-  const response = await tmdbAxios.get(`/movie/${tmdbId}`);
-  return response.data;
-};
-
-const getTVShowDetails = async (tmdbId: string) => {
-  const response = await tmdbAxios.get(`/tv/${tmdbId}`);
-  return response.data;
-};
